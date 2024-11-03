@@ -41,14 +41,14 @@ And again i have unlocked the plant. All other plants have to be planted with th
 
 
 **Code:**
-'''python
+```python
 while True:
     if get_entity_type() == Entities.Bush:
         do_a_flip()
         harvest()
         plant(Entities.Bush)
         move(North)
-'''
+```
 
 # Explanation:
 The code above contains the use of while loops that are used to look for bushes and when found the code carries out some actions such as flipping, harvesting, planting and moving north.
@@ -61,10 +61,13 @@ The code above contains the use of while loops that are used to look for bushes 
 
 # to plant Carrots.
 
-# pythone, Code:
+**Code:**
+```python
 till()
 trade(Items.Carrot_Seed)
 plant(Entities.Carrots)
+```
+
 # Explanation:
 carrots can only grow on tilled soil. To till the soil, we simply code till(). As carrots need seeds to grow, so to call the carrots seeds we have to pass an item type to trade() like trade(Items.Carrot_Seed). & then after finishing all these we can plant carrots.
 
@@ -75,8 +78,8 @@ Plants like trees need some space from one another if you plant them close toget
 
 ## Step 2: Farming on 3x3 tile
 
-**code:**
-'''python
+**Code:**
+```python
 while True:
 	for i in range(get_world_size()-2):
 		harvest()
@@ -109,8 +112,9 @@ while True:
         harvest()
 		plant(Entities.Grass)
 		move(East)
-    move(South) 
-'''
+    move(South)
+```
+
 # Explanation:
 -Infinite Loop:
 The process continues in cycles and cycles, from one stage to the other.
@@ -152,49 +156,50 @@ It’s to harvest the tree between the carrot and the grass.
 # planting the trees between the others plants like carrots, grass
 
 **Code:**
-'''python
+```python
+
 while True:
 	for i in range(get_world_size()-2):
 		harvest()
-		 trade(Items.Carrot_Seed)
-		  plant(Entities.Carrots)
-           move(East)
-            harvest()
-		     use_item(Items.Water_Tank)
-		      plant(Entities.Tree)
-             move(East)
-		    harvest()
-		   trade(Items.Carrot_Seed)
-		  plant(Entities.Carrots)
-         move(East)
+		trade(Items.Carrot_Seed)
+		plant(Entities.Carrots)
+        move(East)
+        harvest()
+		use_item(Items.Water_Tank)
+		plant(Entities.Tree)
+        move(East)
+		harvest()
+		trade(Items.Carrot_Seed)
+		plant(Entities.Carrots)
+        move(East)
 	move(South)
     for i in range(get_world_size()-2):
 		harvest()
-		 use_item(Items.Water_Tank)
-		  plant(Entities.Tree)
-           move(East)
-		    harvest()
-		     trade(Items.Carrot_Seed)
-		     plant(Entities.Carrots)
-            move(East)
-		   harvest()
-		  use_item(Items.Water_Tank)
-		 plant(Entities.Tree)
+		use_item(Items.Water_Tank)
+		plant(Entities.Tree)
+        move(East)
+		harvest()
+		trade(Items.Carrot_Seed)
+		plant(Entities.Carrots)
+        move(East)
+		harvest()
+		use_item(Items.Water_Tank)
+		plant(Entities.Tree)
         move(East)
 	move(South)
 	for i in range(get_world_size()-2):
 		harvest()
-		 plant(Entities.Grass)
-          move(East)
-           harvest()
-		    use_item(Items.Water_Tank)
-		    plant(Entities.Tree)
-           move(East)
-		  harvest()
-		 plant(Entities.Grass)
+		plant(Entities.Grass)
+        move(East)
+        harvest()
+		use_item(Items.Water_Tank)
+		plant(Entities.Tree)
+        move(East)
+		harvest()
+		plant(Entities.Grass)
         move(East)
     move(South)
-'''
+```
 
 ## Explanation
 Infinite Loop:The code runs in endless cycle to give repeated operations in farming.
@@ -225,8 +230,7 @@ Iterates through each plot in the row:
 
 ## plant sunflower
 **Code:**
-
-
+```python
 for i in range(get_world_size()):
       
       trade(Items.Sunflower_Seed)
@@ -256,7 +260,7 @@ for i in range(get_world_size()):
     do_a_flip()
     do_a_flip()
     do_a_flip()
-
+```
 
 # Explanation:
 -Outer Loop:
@@ -278,7 +282,7 @@ The character does a flip animation eight times which is added after the complet
 ## to find treasure:
 
 **Code:**
-'''python
+```python
 def coord():
 	return [get_pos_x(),get_pos_y()]
 directions = [North,West,South,East]
@@ -298,7 +302,7 @@ while get_entity_type() == Entities.Treasure:
 		harvest()
 		plan_pumpkines(10000)
 	use_item(Items.Fertilizer)
-'''
+```
 
 # Explanation:
 -Function:
