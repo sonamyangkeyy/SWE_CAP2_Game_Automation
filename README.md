@@ -9,9 +9,11 @@ In this case, the goal is to plant crops, manage resources such as time and mone
 # Code-Snippets and Explanation
 
 ## Step 1: Farming on 1 tile
+
 # Pythone, Code:
 harvest()
 do_a_flip()
+
 # Explanation:
 This code use for collecting grass.
 Collecting grass will give  hay. Hay can be used to unlock loops in the unlock menu.
@@ -34,6 +36,8 @@ And again i have unlocked the plant. All other plants have to be planted with th
 
 
 ## Step 2: Farming on 1x3 tile
+
+
 # Pythone, Code:
 while True:
     if get_entity_type() == Entities.Bush:
@@ -41,6 +45,8 @@ while True:
         harvest()
         plant(Entities.Bush)
         move(North)
+
+
 # Explanation:
 The code above contains the use of while loops that are used to look for bushes and when found the code carries out some actions such as flipping, harvesting, planting and moving north.
 # Video Demo:
@@ -51,7 +57,8 @@ The code above contains the use of while loops that are used to look for bushes 
 
 
 # to plant Carrots.
-# Code:
+
+# pythone, Code:
 till()
 trade(Items.Carrot_Seed)
 plant(Entities.Carrots)
@@ -64,6 +71,7 @@ Definitely trees are a better source of getting wood than bushes. They give 5 wo
 Plants like trees need some space from one another if you plant them close together their growth will be slower. For every tree which is on a tile north, east, west or south of it the growing time is doubled. This means that if you planted trees one on each tile then the trees will take 2×2×2×2 = 16 times as long to grow.
 
 ## Step 2: Farming on 3x3 tile
+
 # python,code:
 while True:
 	for i in range(get_world_size()-2):
@@ -138,6 +146,7 @@ Using the code above I was able to get enough hay, woods, carrots to unlock the 
 It’s to harvest the tree between the carrot and the grass.
 
 # planting the trees between the others plants like carrots, grass
+
 # pythone, Code:
 while True:
 	for i in range(get_world_size()-2):
@@ -209,7 +218,7 @@ Iterates through each plot in the row:
 # Video Demo:
 ![](trees.mp4)
 
-##
+## plant sunflower
 # pythone, Code:
 for i in range(get_world_size()):
       
@@ -259,6 +268,7 @@ The character does a flip animation eight times which is added after the complet
 
 ## Step 2: Farming on 4x4 tile
 ## to find treasure:
+
 # pythone, Code:
 def coord():
 	return [get_pos_x(),get_pos_y()]
