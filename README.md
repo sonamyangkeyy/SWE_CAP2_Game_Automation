@@ -10,9 +10,11 @@ In this case, the goal is to plant crops, manage resources such as time and mone
 
 ## Step 1: Farming on 1 tile
 
-# Pythone, Code:
+**Code:**
+'''python
 harvest()
 do_a_flip()
+'''
 
 # Explanation:
 This code use for collecting grass.
@@ -38,14 +40,15 @@ And again i have unlocked the plant. All other plants have to be planted with th
 ## Step 2: Farming on 1x3 tile
 
 
-# Pythone, Code:
+**Code:**
+'''python
 while True:
     if get_entity_type() == Entities.Bush:
         do_a_flip()
         harvest()
         plant(Entities.Bush)
         move(North)
-
+'''
 
 # Explanation:
 The code above contains the use of while loops that are used to look for bushes and when found the code carries out some actions such as flipping, harvesting, planting and moving north.
@@ -72,7 +75,8 @@ Plants like trees need some space from one another if you plant them close toget
 
 ## Step 2: Farming on 3x3 tile
 
-# python,code:
+**code:**
+'''python
 while True:
 	for i in range(get_world_size()-2):
 		harvest()
@@ -106,7 +110,7 @@ while True:
 		plant(Entities.Grass)
 		move(East)
     move(South) 
-
+'''
 # Explanation:
 -Infinite Loop:
 The process continues in cycles and cycles, from one stage to the other.
@@ -147,7 +151,8 @@ It’s to harvest the tree between the carrot and the grass.
 
 # planting the trees between the others plants like carrots, grass
 
-# pythone, Code:
+**Code:**
+'''python
 while True:
 	for i in range(get_world_size()-2):
 		harvest()
@@ -189,7 +194,7 @@ while True:
 		plant(Entities.Grass)
         move(East)
     move(South)
-
+'''
 
 ## Explanation
 Infinite Loop:The code runs in endless cycle to give repeated operations in farming.
@@ -219,7 +224,8 @@ Iterates through each plot in the row:
 ![](trees.mp4)
 
 ## plant sunflower
-# pythone, Code:
+**Code:**
+'''python
 for i in range(get_world_size()):
       
       trade(Items.Sunflower_Seed)
@@ -249,6 +255,7 @@ for i in range(get_world_size()):
     do_a_flip()
     do_a_flip()
     do_a_flip()
+'''
 
 # Explanation:
 -Outer Loop:
@@ -269,7 +276,8 @@ The character does a flip animation eight times which is added after the complet
 ## Step 2: Farming on 4x4 tile
 ## to find treasure:
 
-# pythone, Code:
+**Code:**
+'''python
 def coord():
 	return [get_pos_x(),get_pos_y()]
 directions = [North,West,South,East]
@@ -289,6 +297,7 @@ while get_entity_type() == Entities.Treasure:
 		harvest()
 		plan_pumpkines(10000)
 	use_item(Items.Fertilizer)
+'''
 
 # Explanation:
 -Function:
