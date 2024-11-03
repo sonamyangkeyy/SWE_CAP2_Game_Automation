@@ -47,8 +47,7 @@ The code above contains the use of while loops that are used to look for bushes 
 ![](operator.mp4)
 
 # Notes:
-- Using the code above I was able to get enough Bush to unlock the tile & to 
-- These features were unlocked too: variables and functions.
+- Using the code above I was able to get enough Bush to unlock the variable , function ,etc...
 
 
 # to plant Carrots.
@@ -139,6 +138,7 @@ Using the code above I was able to get enough hay, woods, carrots to unlock the 
 It’s to harvest the tree between the carrot and the grass.
 
 # planting the trees between the others plants like carrots, grass
+# pythone, Code:
 while True:
 	for i in range(get_world_size()-2):
 		harvest()
