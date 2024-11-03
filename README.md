@@ -2,8 +2,8 @@
 # Programming the Farming Drone (Report)
 
 ## Introduction
-Briefly describe the game and the objective.
-
+Farming Drone is a simulation game in which using drone the player gets to manage and plant the farm crops. There are different activities related to agriculture in the game and this means that one is able to make farming activities automatic with the aim of getting the most out of the crops to be produced.
+In this case, the goal is to plant crops, manage resources such as time and money well, and harvest good yields. Items can be sold and bought and the use of tools is incorporated to improve farming in order to gain higher yields and to unlock new features.
 
 ## Table of Contents
 # Code-Snippets and Explanation
@@ -29,6 +29,9 @@ The first will never do a flip and the second will do flips forever (an infinite
 I have unlocked the speed of the drone he drone now harvests faster than the grass can grow resulting in no harvest at all. To deal with this <if> branches and the <can_harvest> function are now unlocked.
 And again i have unlocked the plant. All other plants have to be planted with the plant() function. The only plant i can plant right now is a bush. By collecting bush will give wood and wood can be used to unlock the operators, carrots, etc..
 
+# Video Demo:
+![](Harvest.mp4)
+
 
 ## Step 2: Farming on 1x3 tile
 # Pythone, Code:
@@ -41,6 +44,8 @@ while True:
 # Explanation:
 The code above contains the use of while loops that are used to look for bushes and when found the code carries out some actions such as flipping, harvesting, planting and moving north.
 # Video Demo:
+![](operator.mp4)
+
 # Notes:
 - Using the code above I was able to get enough Bush to unlock the tile & to 
 - These features were unlocked too: variables and functions.
@@ -123,8 +128,12 @@ Harvest again, plant with grass again and go east.
 Move South after finishing.
 
 # Video Demo:
+![](without.mp4)
+
+
 # Notes:
 Using the code above I was able to get enough hay, woods, carrots to unlock the pumpkins, variables, function, etc...
+
 
 --The code below is the same as above,there’s only a slight change in it.
 It’s to harvest the tree between the carrot and the grass.
@@ -197,6 +206,8 @@ Iterates through each plot in the row:
     East will introduce harvest; next is watering and planting of trees.
     Finally wrap up the whole activity by planting grass again.
 
+# Video Demo:
+![](trees.mp4)
 
 ##
 # pythone, Code:
@@ -243,6 +254,10 @@ It will then turn right and move South to the next row and it will perform this 
 After planting it counts the no of petals for each plot in the world.
 The character does a flip animation eight times which is added after the completion of the tasks.
 
+# Video Demo:
+![](sunflower.mp4)
+
+## Step 2: Farming on 4x4 tile
 ## to find treasure:
 # pythone, Code:
 def coord():
@@ -286,4 +301,17 @@ If the character has less than 5 units of fertilizer then it harvests resources 
 Last of all, it uses fertilizer when available Last of all, it uses fertilizer when available.
 
 # Video Demo:
-# Notes:
+![](Treasure.mp4)
+
+## Challenges
+Resource Management: Seed and fertilizer distribution/ Handing out seeds and fertilizers equitably to make the competition fair.
+It is difficult to Developing smart movements of the drone to ensure that it does not collide with any object.
+
+## Learnings
+Resource Management:
+Useful in establishing the various means of implementing resources that are dynamic: I made the drone access the seeds as well as the fertilizers depending on its current necessity.
+
+State Management: Controlled the position and inventory of the drone to make it as smooth as possible during the game.
+
+## References
+1. [Resource 1 ](https://youtu.be/Pzu2bHR1fP8?si=2dACNpdIfQ10gLMS)
