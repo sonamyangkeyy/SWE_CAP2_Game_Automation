@@ -156,42 +156,42 @@ It’s to harvest the tree between the carrot and the grass.
 while True:
 	for i in range(get_world_size()-2):
 		harvest()
-		trade(Items.Carrot_Seed)
-		plant(Entities.Carrots)
-        move(East)
-        harvest()
-		use_item(Items.Water_Tank)
-		plant(Entities.Tree)
-        move(East)
-		harvest()
-		trade(Items.Carrot_Seed)
-		plant(Entities.Carrots)
-        move(East)
+		 trade(Items.Carrot_Seed)
+		  plant(Entities.Carrots)
+           move(East)
+            harvest()
+		     use_item(Items.Water_Tank)
+		      plant(Entities.Tree)
+             move(East)
+		    harvest()
+		   trade(Items.Carrot_Seed)
+		  plant(Entities.Carrots)
+         move(East)
 	move(South)
     for i in range(get_world_size()-2):
 		harvest()
-		use_item(Items.Water_Tank)
-		plant(Entities.Tree)
-        move(East)
-		harvest()
-		trade(Items.Carrot_Seed)
-		plant(Entities.Carrots)
-        move(East)
-		harvest()
-		use_item(Items.Water_Tank)
-		plant(Entities.Tree)
+		 use_item(Items.Water_Tank)
+		  plant(Entities.Tree)
+           move(East)
+		    harvest()
+		     trade(Items.Carrot_Seed)
+		     plant(Entities.Carrots)
+            move(East)
+		   harvest()
+		  use_item(Items.Water_Tank)
+		 plant(Entities.Tree)
         move(East)
 	move(South)
 	for i in range(get_world_size()-2):
 		harvest()
-		plant(Entities.Grass)
-        move(East)
-        harvest()
-		use_item(Items.Water_Tank)
-		plant(Entities.Tree)
-        move(East)
-		harvest()
-		plant(Entities.Grass)
+		 plant(Entities.Grass)
+          move(East)
+           harvest()
+		    use_item(Items.Water_Tank)
+		    plant(Entities.Tree)
+           move(East)
+		  harvest()
+		 plant(Entities.Grass)
         move(East)
     move(South)
 '''
@@ -225,7 +225,8 @@ Iterates through each plot in the row:
 
 ## plant sunflower
 **Code:**
-'''python
+
+
 for i in range(get_world_size()):
       
       trade(Items.Sunflower_Seed)
@@ -255,7 +256,7 @@ for i in range(get_world_size()):
     do_a_flip()
     do_a_flip()
     do_a_flip()
-'''
+
 
 # Explanation:
 -Outer Loop:
